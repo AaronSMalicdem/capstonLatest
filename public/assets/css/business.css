@@ -1,0 +1,156 @@
+body {
+    /* The image used */
+    background-image: url("https://img.freepik.com/premium-photo/furniture-office-background-dark_87720-269186.jpg");
+    backdrop-filter: blur(25px);
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+}
+.businessesCard {
+    background-color: #fff; /* Sets a white background for the container */
+    padding: 20px; /* Optional: Adds padding */
+    border-radius: 10px; /* Optional: Rounds the corners */
+}
+div.businessName{
+    font-weight: bold;
+}
+img.logos{
+    width: 70px;
+    height: 70px;
+ }
+
+
+
+
+img.businesses{
+    width: 200px;
+    height: 125px;
+    border-radius: 10px;
+}
+
+
+p.businessSections{
+    font-weight: bold;
+}
+input.editBusiness {
+    color:#000;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+textarea.businessIndexDesc {
+    height: 100px;
+    width: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    border: none;
+}
+
+
+textarea.businessIndexDesc::-webkit-scrollbar {
+    display: none;
+}
+button.updateBusiness{
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+ 
+a.backtoIndex{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+ }
+
+/*  */
+
+a.addBusinessbutton{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+ }
+.businessesCard {
+    background-color: #fff; /* Sets a white background for the container */
+    padding: 20px; /* Optional: Adds padding */
+    border-radius: 10px; /* Optional: Rounds the corners */
+}
+div.businessName{
+    font-weight: bold;
+}
+img.logos{
+    width: 70px;
+    height: 70px;
+ }
+img.businesses{
+    width: 200px;
+    height: 125px;
+    border-radius: 10px;
+}
+p.businessSections{
+    font-weight: bold;
+}
+div.businessIndexDesc {
+    height: 90px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+
+div.businessIndexDesc::-webkit-scrollbar {
+    display: none;
+}
+button.businessDelete{
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+    border: none;
+    background: none;
+ }
+
+
+
+
+
+ .text-white {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Custom input style */
+.custom-input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white; /* Just a white line at the bottom */
+    color: white; /* Make input text white */
+    width: 100%;
+}
+
+/* Remove focus outline for cleaner look */
+.custom-input:focus {
+    outline: none;
+    border-color: white;
+}
+
+/* Ensure the button has good contrast */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+div.createBusiness{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}

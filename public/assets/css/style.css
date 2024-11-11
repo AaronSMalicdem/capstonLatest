@@ -1,0 +1,364 @@
+/* KUWAGO 1 MAIN DASHBOARD */
+div.kuwago1Main {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+div.card-boxKuwago1 {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    color: white;
+    height: 140px;
+    width: 183px;
+    margin: 4px;
+}
+div.chartsKuwago1 {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+div.compare{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    color: white;
+    margin: 3px;
+}
+div.card-targetSales {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    color: white;
+    height: 140px;
+    margin: 3px;
+}
+
+/* KUWAGO 1 SALES DASHBOARD */
+div.kuwago1Sales{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+div.donutChart{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    color: white;
+    height: 230px;
+    text-align: center;
+    position: relative;
+    line-height: 1.0; 
+    
+}
+#myChart1 {
+    width: 100%; /* Make it responsive to the column */
+    max-width: 120px; /* Adjust as necessary */
+    position: relative;
+}
+div.salesChartKuwago1, div.salesChartKuwago2{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+div.kuwagoLeastSelling{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    color: white;
+    width: 262px;
+}
+div.salesByCat{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+div.topSelling{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+/* KUWAGO1 EXPENSESTABS */
+div.expensesChart{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+div.totalExpense {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    color: white;
+  
+}
+div.recentPur{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+div.expensesbyCat{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+
+
+
+
+.modal-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #333;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    color: #fff; /* Change text color to white */
+}
+
+.modal-content h5 {
+    margin-bottom: 20px;
+}
+
+.modal-content .form-label {
+    color: #fff; /* Make the label color white */
+}
+
+.modal-content input[type="date"] {
+    color: #000; /* Set input text color to black for visibility */
+}
+
+body,
+html {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* The image used */
+    background-image: url("https://img.freepik.com/premium-photo/furniture-office-background-dark_87720-269186.jpg");
+    backdrop-filter: blur(25px);
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+}
+
+/* Style for icons */
+i {
+    color: #ffffff;
+}
+/* Style for User Accounts */
+.account-page h3,
+.account-page span,
+.account-page p,
+.account-page label {
+    color: #ffffff;
+}
+
+.account-page .delete-button button {
+    padding: 0;
+}
+.account-page span {
+    font-size: x-large;
+    margin-left: 10px;
+}
+
+.account-page img {
+    border: 2px solid #ffffff;
+    border-radius: 100%;
+}
+
+/* Style for TopBar */
+.nav-bar img {
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*END STYLE FOR TOPBAR */
+
+
+/* THIS IS THE STYLE FOR GENERAL BLADE'S MAIN CONTENT */
+div.UdDesignMain{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+div.salesTab, div.profitsTab, div.expensesTab, div.targetTabs{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    color: white;
+    margin: 3px auto; 
+    height:100px;
+}
+div.printingChart, div.merchChart{
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 3px auto; 
+    height:177px;
+    color: #fff;
+}
+/* END OF THE STYLE FOR GENERAL BLADE'S MAIN CONTENT */
+
+
+
+
+
+
+
+
+
+
+/* THIS IS THE STYLE FOR SALES BLADE'S MAIN CONTENT */
+div.UdDesignSales{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px); 
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px; 
+    padding: 5px 20px;;
+    margin: 20px auto; 
+}
+
+div.paymentMethod, div.salesChart{
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px; 
+    margin: 2px auto; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    height:190px;
+}
+div.salesByCat{
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    height:200px;
+    margin: 2px auto; 
+}
+
+div.topSell{
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px; 
+    margin: 2px auto; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    height:200px;
+    
+}
+/* END OF THE STYLE FOR SALES BLADE'S MAIN CONTENT */
+
+
+
+
+
+/*  STYLE FOR EXPENSES BLADE'S MAIN CONTENT */
+
+div.UdDesignExpenses{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px); 
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px; 
+    padding: 5px 20px;;
+    margin: 20px auto; 
+}
+div.totalexpenses{
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    height:200px;
+    width: 40%;
+    margin-right: 15px;
+}
+div.expensesChart{
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    border-radius: 10px; 
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    height:200px;
+}
+
+
+ div.expenseByCat{
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    border-radius: 10px; 
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    height:200px;
+    margin: 3px auto; 
+}
+/* END OF THE STYLE FOR EXPENSES BLADE'S MAIN CONTENT */

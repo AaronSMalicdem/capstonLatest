@@ -1,0 +1,269 @@
+body {
+    background-image: url("https://t4.ftcdn.net/jpg/07/94/30/45/360_F_794304521_O4o0Y5UrvKtDxBNHY9utMowV2VhuhRpk.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; 
+}
+
+/* THIS IS THE STYLE FOR SIDEBAR */
+
+.sidebar .nav {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.sidebar .nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 13px 0;
+}
+
+.sidebar .nav-item a i {
+    font-size: 24px;
+    color: white;
+}
+
+.sidebar .nav-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link i {
+    font-size: 24px;
+    margin: 8px 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+.sidebar .nav-item a {
+    position: relative; 
+}
+
+.sidebar .nav-item a::after {
+    content: attr(data-tooltip); 
+    position: absolute;
+    left: 60px; 
+    opacity: 0; 
+    color: white;
+    background: rgba(0, 0, 0, 0.7); 
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap; 
+    font-size: 14px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateX(-10px); 
+    pointer-events: none; 
+}
+
+.sidebar .nav-item a:hover::after {
+    opacity: 1; 
+    transform: translateX(0); 
+}
+/* END OF THE STYLE FOR SIDEBAR */
+
+
+/* THIS IS THE STYLE FOR TOPBAR */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.user-image {
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+
+.user-welcome {
+    font-size: 14px; 
+    color: #fff; 
+}
+.dropdown-oval-container {
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px); 
+    border-radius: 50px; 
+    padding: 10px 70px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+}
+
+.dropdown-toggle {
+    background: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.dropdown-item {
+    color: #333; 
+}
+.fa-solid {
+    font-size: 21px; 
+    color: #fff;
+}
+
+div.topbar {
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px); 
+    border-radius: 50px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin: 20px auto; 
+    width: 95%; 
+    max-width: 1200px; 
+    height: 55px;
+}
+/*END STYLE FOR TOPBAR */
+
+
+/* THIS IS THE STYLE FOR GENERAL BLADE'S MAIN CONTENT */
+div.UdDesignMain{
+    backdrop-filter: blur(20px); 
+    border-radius: 10px; 
+    margin: 20px auto; 
+}
+
+div.salesTab, div.profitsTab, div.expensesTab, div.targetTabs{
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin: 3px auto; 
+    height:100px;
+    width: 95%; 
+}
+div.printingChart, div.merchChart{
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin: 3px auto; 
+    height:177px;
+    width: 95%; 
+}
+/* END OF THE STYLE FOR GENERAL BLADE'S MAIN CONTENT */
+
+
+
+
+/* THIS IS THE STYLE FOR FOOTER */
+div.footer {
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px); 
+    border-radius: 50px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    height: 55px;
+    padding: 7px 0px; 
+}
+.dropdownforModal {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 5px 10px;
+    
+}
+
+.dropdownforModal option {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+/* END OF THE STYLE FOR FOOTER */
+
+
+
+
+
+/* THIS IS THE STYLE FOR SALES BLADE'S MAIN CONTENT */
+div.UdDesignSales{
+    backdrop-filter: blur(20px); 
+    border-radius: 10px; 
+    padding: 5px 20px;;
+    margin: 20px auto; 
+}
+
+div.paymentMethod, div.salesChart{
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    border-radius: 10px; 
+    margin: 2px auto; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    height:190px;
+    width: 49%;
+}
+div.salesByCat{
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    height:200px;
+    margin: 2px auto; 
+    width: 57%;
+}
+
+div.topSell{
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    border-radius: 10px; 
+    margin: 2px auto; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    height:200px;
+    
+}
+/* END OF THE STYLE FOR SALES BLADE'S MAIN CONTENT */
+
+
+
+
+
+/*  STYLE FOR EXPENSES BLADE'S MAIN CONTENT */
+
+div.UdDesignExpenses{
+    backdrop-filter: blur(20px); 
+    border-radius: 10px; 
+    padding: 5px 20px;;
+    margin: 20px auto; 
+}
+div.totalexpenses{
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    height:200px;
+    width: 40%;
+    margin-right: 15px;
+}
+div.expensesChart{
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    height:200px;
+}
+
+
+ div.expenseByCat{
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    height:200px;
+    margin: 3px auto; 
+}
+/* END OF THE STYLE FOR EXPENSES BLADE'S MAIN CONTENT */
